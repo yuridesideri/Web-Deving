@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrumKit</title>
+    <style>
+        body {background-image: url(back.jpg);
+            color:white;
+            }
+
+        .box {
+            background-color: blue;
+            width: 60px;
+            height: 60px;
+            border: black 4px solid;
+            /*float: left; */
+            margin: 10px;
+            margin:40px;
+            text-align: center
+            }
+
+        .container{
+                width: 70%;
+                margin: 25vh auto 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+            }
+
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class="box" data-key="65">
+            <h1>A</h1>
+            <p>Snare</p>
+        </div>
+        <div class="box" data-key="83">
+            <h1>S</h1>
+            <p>Clap</p>
+        </div>
+        <div class="box" data-key="68">
+            <h1>D</h1>
+            <p>Hat</p>
+        </div>
+        <div class="box" data-key="70">
+            <h1>F</h1>
+            <p>Kick</p>
+        </div>
+        <div class="box" data-key="71">
+            <h1>G</h1>
+            <p>Boom</p>
+        </div>
+        <div class="box" data-key="72">
+            <h1>H</h1>
+            <p>OpenHat</p>
+        </div>
+        <div class="box" data-key="74">
+            <h1>J</h1>
+            <p>Tom</p>
+        </div>
+        <div class="box" data-key="75">
+            <h1>K</h1>
+            <p>Tink</p>
+        </div>
+        <div class="box" data-key="76">
+            <h1>L</h1>
+            <p>Ride</p>
+    </div>
+
+
+
+    <audio data-key="65" src="sound/snare.wav"></audio>
+    <audio data-key="83" src="sound/clap.wav"></audio>
+    <audio data-key="68" src="sound/hat.wav"></audio>
+    <audio data-key="70" src="sound/kick.wav"></audio>
+    <audio data-key="71" src="sound/boom.wav"></audio>
+    <audio data-key="72" src="sound/openhat.wav"></audio>
+    <audio data-key="74" src="sound/tom.wav"></audio>
+    <audio data-key="75" src="sound/tink.wav"></audio>
+    <audio data-key="76" src="sound/ride.wav"></audio>
+
+
+
+    <script>
+        window.addEventListener('keydown', function(e) {
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+            if(!audio) return;
+            audio.currentTime = 0;
+            audio.play();
+
+            const key = document.querySelector(`.box[data-key="${e.keyCode}"]`);
+            console.log(key);
+        });
+    </script>
+
+    
+</body>
+</html>
