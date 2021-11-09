@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The City Form</title>
+</head>
+<body>
+    <section id="init">
+        <h1 id='title'>The City Form</h1>
+        <p id='description'>A form to collect personal preferences on cities.</p>
+        <section>
+        <form class='back' id='survey-form'>
+          <section id="personal-id">
+          <label for='name' id='name-label'>Name:</label>
+          <input id='name' placeholder='Enter Name'/>
+          <label for='email' id='email-label'>E-mail:</label>
+          <input id='email' placeholder='Enter E-mail'/>
+          <label for='number' id='number-label'>Phone Number:</label>
+          <input id='number' placeholder='Enter Phone Number' min=9 max=11/>
+          </section>
+          <section>
+          <p>What city do you live in?</p>
+          <select id="dropdown">
+            <option>Paris</option>
+            <option>HongKong</option>
+            <option>Rome</option>
+            <option>Dubai</option>
+          </select>
+          </section>
+          <section id="moving-time">
+          <p> When are you planning on traveling? </p>
+          <label>
+            <input type='radio' name='1m'/>About a Month
+          </label
+          <label>
+            <input type='radio' name='3m'/>Around 3 Months
+          </label>
+          <label>
+            <input type='radio' name= '+3m'/>3 Months or more
+          </label>
+          </section>
+          <section id="city-knowledge">
+            <p>Which cities did you know?</p>
+            <label>
+              <input type='checkbox' value='tokyo'/>Tokyo
+            </label>
+            <label>
+              <input type='checkbox' value='saopaulo'/>São Paulo
+            </label>
+            <label>
+              <input type='checkbox' value='sydney'/>Sydney
+            </label>
+            <label>
+              <input type='checkbox' value = 'moscou'/>Moscou
+            </label>
+          </section>
+          <section id='comments'>
+            <textarea rows="4" cols="50" placeholder='Enter some comments you would like us to read.'></textarea>
+            <button id='submit'>Submit</button>
+          </section>
+        </form>
+        </section>
+        
+</body>
+</html>
