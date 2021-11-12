@@ -1,0 +1,14 @@
+html{
+    background-color: black;
+    color: white;
+}
+
+div {
+    background-color: blueviolet;
+}
+
+body {
+    border: dashed cornflowerblue;
+    background-color: darkgreen;
+    margin: 0;
+}
