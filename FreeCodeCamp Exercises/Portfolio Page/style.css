@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Quantico&display=swap');
+*{
+    margin:0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+body {
+    overflow-x: hidden;
+    display: grid;
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Mohave', sans-serif;
+    font-family: 'Quantico', sans-serif;
+    grid-template-rows: 800px 800px 800px 400px;
+    grid-template-areas:  
+    'first'
+    'second'
+    'third'
+    'forth';
+}
+
+.page1 {
+    grid-area: first;
+}
+.page2{
+    grid-area: second;
+}
+.page3{
+    grid-area: third;
+}
+.page4{
+    grid-area: forth;
+}
+.purple-bg {
+    background: #5A0090;
+}
+
+header {
+    color: white;
+    top: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header>nav>ul>ol {
+    display: inline;
+}
+
+#header-nav {
+    margin-right: 34px;
+    font-size: 1.4em;
+}
+
+header>h3 {
+    font-weight: normal;
+    margin-left: 70px;
+    font-size: 2.2em;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 259px ;
+    margin-bottom: 200px;
+}
+
+#call-container {
+    display: flex;
+    background-color: white;
+    min-width: 60vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    margin: 10px;
+}
+
+#subtext {
+    display: block;
+    color: white;
+    font-size: 2.7em;
+    margin: 10px;
+}
+
+#projects {
+    background-color: #5A0090;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+
+}
+
+#rotation1 {
+    position: relative;
+    background-color: #5A0090;
+    transform-origin: top left;
+    transform: rotate(-3deg);
+    height: 400px;
+    width: 110%;
+    align-self: flex-start;
+}
+
+
+#circle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 100%;
+    height: 455px;
+    width: 455px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+}
+
+#subtitle{
+    font-size: 0.5em;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#rotation2{
+    position: relative;
+    background-color: black;
+    transform-origin: top right;
+    transform: rotate(2.5deg);
+    height: 200px;
+    width: 110%;           
+    align-self: flex-start;
+}
+
+#lets-chat{
+    position: absolute;
+    color: white;
+    font-size: 6em;
+    width: 500px;
+    height:200px;
+    align-self:flex-start;
+    margin-top:200px;
+}
+
+#box {
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    background: white;
+    min-width: 60vw;
+    height:98px;
+    justify-content: space-between;
+    align-items:center;
+    font-size:1.5em;
+}
+
+#subtit{
+    margin: auto;
+}
+
+#arrow{
+    margin:0;
+    background: #5A0090;
+    height:100%;
+    width: 5.5vw;
+    min-width: 80px;
+}
+#footer {
+    background-color: #5A0090;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+#txt1{
+    align-self: flex-end;
+}
+
+#txt2 {
+    justify-self: flex-end;
+}
+
+@media (max-width: 910px) {
+  #call-container {
+    display: flex;
+    background-color: white;
+    min-width: 60vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2em;
+    margin: 10px;
+}
+
+  #subtext {
+    display: block;
+    color: white;
+    font-size: 2em;
+    margin: 10px;
+}
+}
+
+
+@media (max-width: 720px) {
+  #call-container {
+    display: flex;
+    background-color: white;
+    min-width: 60vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8em;
+    margin: 10px;
+}
+
+  #subtext {
+    display: block;
+    color: white;
+    font-size: 1.6em;
+    margin: 10px;
+}
+}
